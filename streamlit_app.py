@@ -70,7 +70,7 @@ if st.button("占ってもらう"):
         supabase.table("fortune_logs").insert({
             "user_name": name,
             "fortune": fortune,
-            "music_title": music_title
+            "music_title": music_title,
             "created_at":created_at
         }).execute()
 
