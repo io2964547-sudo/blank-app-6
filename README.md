@@ -35,7 +35,7 @@
 
 👉 **（ここに Streamlit Cloud などの公開URLを記載）**  
 https://blank-app-cnkmfdjn05.streamlit.app/
-## 📜 画面イメージ（概要）
+## 📜 占い方（概要）
 
 1. 名前を入力
 2. 「占ってもらう」ボタンをクリック
