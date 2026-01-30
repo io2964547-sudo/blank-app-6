@@ -18,7 +18,9 @@ st.title("🔮 今日のあなた、だいたいこんな感じ")
 st.write("占った結果は記録として保存されます。")
 
 name = st.text_input("あなたの名前")
+from datetime import datetime, timezone
 
+created_at = datetime.now(timezone.utc)
 # ======================
 # 占いデータ
 # ======================
@@ -69,6 +71,7 @@ if st.button("占ってもらう"):
             "user_name": name,
             "fortune": fortune,
             "music_title": music_title
+            "created_at":created_at
         }).execute()
 
         st.success("結果をデータベースに保存しました！")
