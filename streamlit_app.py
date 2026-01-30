@@ -19,8 +19,7 @@ st.write("占った結果は記録として保存されます。")
 
 name = st.text_input("あなたの名前")
 from datetime import datetime, timezone
-
-created_at = datetime.now(timezone.utc)
+created_at = datetime.now(timezone.utc).isoformat()
 # ======================
 # 占いデータ
 # ======================
