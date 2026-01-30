@@ -1,19 +1,67 @@
-# 🎈 Blank app template
+# 🔮 ラッキー音楽占いアプリ
 
-A simple Streamlit app template for you to modify!
+このアプリは、名前を入力してボタンを押すだけで  
+**今日の運勢・ひとことコメント・ラッキー音楽**を占える  
+シンプルな Web アプリです。
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+占い結果はデータベースに保存され、過去の履歴も確認できます。
 
-### How to run it on your own machine
+---
 
-1. Install the requirements
+## 🌟 アプリの主な機能
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- 名前を入力してワンクリックで占いを実行
+- ランダムに以下を表示
+  - 今日の運勢（大吉〜大凶）
+  - ゆるい一言コメント
+  - 今日のラッキー音楽（YouTube動画）
+- 占い結果をデータベースに保存
+- 過去の占い履歴を時系列で表示（最新10件）
 
-2. Run the app
+---
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 🖥 使用技術
+
+- Python
+- Streamlit（WebアプリUI）
+- Supabase（PostgreSQL / データ保存）
+- YouTube（動画埋め込み）
+
+---
+
+## 🔗 アプリ試用URL
+
+以下のURLから、実際にアプリを試すことができます。
+
+👉 **（ここに Streamlit Cloud などの公開URLを記載）**  
+https://blank-app-cnkmfdjn05.streamlit.app/
+## 📜 画面イメージ（概要）
+
+1. 名前を入力
+2. 「占ってもらう」ボタンをクリック
+3. 運勢・コメント・音楽が表示される
+4. 結果は自動的に保存され、履歴に反映される
+
+---
+
+## 🎯 制作の目的
+
+- Python を用いた Web アプリ開発の理解
+- 外部データベース（Supabase）との連携
+- API・RLS（Row Level Security）など実践的なバックエンド知識の習得
+
+---
+
+## ✨ 工夫した点
+
+- 占い結果を「一度きり」で終わらせず、履歴として残せるようにした点
+- ランダム要素を取り入れ、毎回違う結果になるようにした点
+- YouTube 動画を埋め込み、視覚的にも楽しめる構成にした点
+
+---
+
+## 📌 今後の改善案
+
+- ユーザーごとに履歴を分けて表示
+- 運勢の出現割合をグラフで可視化
+- ログイン機能の追加
